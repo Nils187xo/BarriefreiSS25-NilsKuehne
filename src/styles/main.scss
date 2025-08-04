@@ -1,0 +1,72 @@
+@use 'reset';
+@use 'variables';
+@use 'base';
+@use 'components';
+@use 'AboutPage';
+@use 'homepage';
+@use 'ResourcesPage';
+:root {
+    /* Lightmode */
+    --color-bg-body: #FFFBFF;                // sehr hell, kontraststark
+    --color-bg-header-footer: #B0A8B9;       // hellvioletter Hintergrund
+    --color-bg-main: #FFF4F1;                // leicht getönter Weißton
+  
+    --color-text-primary: #4B4453;           // dunkles Violett
+    --color-text-secondary: #845EC2;         // Lila, gut sichtbar
+    --color-link: #C34A36;                   // warmes Rot
+    --color-link-hover: #FF8066;             // Koralle
+  
+    --color-status-positive: #845EC2;        // Lila als positive Farbe
+    --color-status-negative: #C34A36;        // kräftiges Rot
+    --color-status-neutral: #B0A8B9;         // unauffällig
+  
+    --color-button-primary-bg: #845EC2;
+    --color-button-primary-text: #FFFFFF;
+  
+    --color-button-secondary-bg: #E9E6ED;
+    --color-button-secondary-text: #4B4453;
+  
+    --color-button-tertiary-bg: #F5F2F7;
+    --color-button-tertiary-text: #4B4453;
+  
+    --color-input-bg: #FFFFFF;
+    --color-input-text: #4B4453;
+    --color-input-border: #B0A8B9;
+  
+    --color-icon-default: #4B4453;
+    --color-decorative: #B0A8B9;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      /* Darkmode */
+      --color-bg-body: #1E1B22;
+      --color-bg-header-footer: #2E2933;
+      --color-bg-main: #2C2222;
+  
+      --color-text-primary: #FFFFFF;
+      --color-text-secondary: #FF8066;
+      --color-link: #FF8066;
+      --color-link-hover: #C34A36;
+  
+      --color-status-positive: #B0A8B9;
+      --color-status-negative: #FF8066;
+      --color-status-neutral: #66606C;
+  
+      --color-button-primary-bg: #C34A36;
+      --color-button-primary-text: #FFFFFF;
+  
+      --color-button-secondary-bg: #4B4453;
+      --color-button-secondary-text: #FFFFFF;
+  
+      --color-button-tertiary-bg: #3A3540;
+      --color-button-tertiary-text: #FFFFFF;
+  
+      --color-input-bg: #2E2933;
+      --color-input-text: #FFFFFF;
+      --color-input-border: #845EC2;
+  
+      --color-icon-default: #FF8066;
+      --color-decorative: #4B4453;
+    }
+  }

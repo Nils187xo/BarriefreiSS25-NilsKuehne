@@ -1,0 +1,124 @@
+@use './variables';
+@use './components';
+
+.resourcespage {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: variables.$color-text-primary;
+  background-color: variables.$color-bg-main;
+
+  &__header {
+    margin-bottom: 2rem;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.125rem;
+      color: variables.$color-text-secondary;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 2rem;
+    background: variables.$color-button-secondary-bg;
+    padding: 1rem;
+    border-left: 4px solid variables.$color-button-primary-bg;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 0.5rem;
+
+        a {
+          color: variables.$color-link;
+          text-decoration: underline;
+
+          &:hover,
+          &:focus {
+            color: variables.$color-link-hover;
+            outline: 2px dashed variables.$color-link-hover;
+            outline-offset: 3px;
+          }
+        }
+      }
+    }
+  }
+
+  section {
+    margin-bottom: 2.5rem;
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+      border-bottom: 2px solid variables.$color-button-primary-bg;
+      padding-bottom: 0.25rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+    }
+
+    ul,
+    dl {
+      margin: 1rem 0;
+      padding-left: 1.5rem;
+
+      li,
+      dt {
+        font-weight: bold;
+        margin-top: 0.5rem;
+      }
+
+      dd {
+        margin-left: 1rem;
+        font-weight: normal;
+        color: variables.$color-text-secondary;
+      }
+    }
+
+    a {
+      color: variables.$color-link;
+
+      &:hover,
+      &:focus {
+        color: variables.$color-link-hover;
+        text-decoration: underline;
+      }
+    }
+
+    article {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__footer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: variables.$color-text-secondary;
+
+    a {
+      color: variables.$color-link;
+
+      &:hover,
+      &:focus {
+        color: variables.$color-link-hover;
+      }
+    }
+  }
+
+  &__note {
+    background: variables.$color-bg-header-footer;
+    padding: 1rem;
+    border-left: 4px solid variables.$color-status-positive;
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+}

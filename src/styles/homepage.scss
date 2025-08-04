@@ -1,0 +1,108 @@
+@use 'variables';
+
+.homepage {
+  background-color: variables.$color-bg-main;
+  color: variables.$color-text-primary;
+  padding: 2rem;
+
+  &__toggle {
+    display: inline-block;
+    background-color: variables.$color-button-secondary-bg;
+    color: variables.$color-button-secondary-text;
+    border: 1px solid variables.$color-input-border;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+
+    &:hover {
+      background-color: variables.$color-button-primary-bg;
+      color: variables.$color-button-primary-text;
+    }
+  }
+
+  &__hero {
+    padding: 3rem 1rem;
+    background-color: variables.$color-bg-header-footer;
+    text-align: center;
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: variables.$color-text-secondary;
+      font-size: 1.25rem;
+    }
+  }
+
+  &__features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+
+    &-item {
+      background-color: variables.$color-bg-header-footer;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+      h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        color: variables.$color-text-secondary;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    background-color: variables.$color-button-primary-bg;
+    color: variables.$color-button-primary-text;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 2rem;
+
+    &:hover {
+      background-color: variables.$color-link-hover;
+      color: variables.$color-button-primary-text;
+    }
+  }
+
+  // === Darkmode Überschreibungen ===
+  .dark & {
+    background-color: variables.$color-bg-body;
+    color: variables.$color-text-primary;
+
+    &__hero,
+    &__features-item {
+      background-color: variables.$color-bg-header-footer;
+    }
+
+    &__toggle {
+      background-color: variables.$color-button-secondary-bg;
+      color: variables.$color-button-secondary-text;
+
+      &:hover {
+        background-color: variables.$color-button-primary-bg;
+        color: variables.$color-button-primary-text;
+      }
+    }
+
+    &__button {
+      background-color: variables.$color-button-primary-bg;
+      color: variables.$color-button-primary-text;
+
+      &:hover {
+        background-color: variables.$color-link-hover;
+      }
+    }
+  }
+}

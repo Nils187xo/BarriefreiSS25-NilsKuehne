@@ -1,0 +1,75 @@
+@use 'variables';
+
+.contactform {
+  margin-top: 2rem;
+
+  &__toggle {
+    background-color: variables.$color-button-primary-bg;
+    color: variables.$color-button-primary-text;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+
+    &:hover,
+    &:focus {
+      background-color: variables.$color-button-primary-bg-hover;
+      outline: 2px solid variables.$color-link-hover;
+      outline-offset: 2px;
+    }
+  }
+
+  &__panel {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: variables.$color-bg-header-footer;
+    border: 1px solid variables.$color-input-border;
+    border-radius: 4px;
+  }
+
+  &__group {
+    margin-bottom: 1rem;
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 0.25rem;
+      color: variables.$color-text-secondary;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid variables.$color-input-border;
+      background-color: variables.$color-input-bg;
+      color: variables.$color-input-text;
+      border-radius: 4px;
+
+      &:focus {
+        outline: 2px solid variables.$color-link;
+        outline-offset: 2px;
+      }
+    }
+  }
+
+  &__submit {
+    background-color: variables.$color-button-primary-bg;
+    color: variables.$color-button-primary-text;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: variables.$color-button-primary-bg-hover;
+      outline: 2px dashed variables.$color-link-hover;
+      outline-offset: 2px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@use 'variables';
+
+.button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease;
+
+  &--primary {
+    background-color: variables.$color-button-primary-bg;
+    color: variables.$color-button-primary-text;
+
+    &:hover {
+      background-color: var(--color-button-primary-bg-hover);
+    }
+  }
+
+  &--secondary {
+    background-color: variables.$color-button-secondary-bg;
+    color: variables.$color-button-secondary-text;
+
+    &:hover {
+      background-color: var(--color-button-secondary-bg-hover);
+    }
+  }
+}
+
+.input {
+  background-color: variables.$color-input-bg;
+  color: variables.$color-input-text;
+  border: 1px solid variables.$color-input-border;
+  padding: 0.5rem;
+  border-radius: 4px;
+  width: 100%;
+}

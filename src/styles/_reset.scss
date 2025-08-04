@@ -1,0 +1,115 @@
+// ===  adopted and changed from http://meyerweb.com/eric/tools/css/reset/ v2.0 20110126 License: none (public domain) === //
+// ===  Block Elements === // 
+// ===  landmarks === //
+aside, header, footer, main, nav, section, 
+// ===  lower semantic information === //
+article, hr, 
+// ===  block elements === //
+div, noscript, 
+// ===  text Structure === //
+h1, h2, h3, h4, h5, h6, p, 
+// ===  blockquote removed: use user agent styling === //
+// ===  text visualisation === //
+pre, 
+// ===  Additional information === //
+address, 
+// ===  form element === //
+form, fieldset, 
+// ===  media information === //
+figcaption, figure, picture, 
+// ===  multi-media integration === //
+iframe, video, audio, 
+// ===  Data Tables === //
+table, thead, tbody, tfoot {
+	margin: 0;
+	padding: 0;
+	border: none;
+	vertical-align: baseline;
+}
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+// body, 
+// ===  Lists === //
+// dl, dt, dd, menu, ol, ul, li, 
+// ===  HTML5 display-role reset for older browsers === //
+code, // ===  Code standalone === //
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, main, nav, section, search {
+	display: block;
+}
+// ===  inline elements === //
+span, 
+// ===  text explanation === //
+abbr, dfn, 
+// ===  visual text formating done right === //
+em, strong, mark, 
+// ===  Text-Edit === //
+del, s, ins, 
+// ===  scientific text formatting === //
+cite, q, sub, sup, 
+// ===  computer text === //
+p code, li code, dl code, h1 code, h2 code, h3 code, h4 code, h5 code, h6 code// ===  Code inside a paragraph, list or definition list === //
+kbd, // ===  Keyboard input === //
+samp, // ===  sample output === //
+var, // ===  Variable names === //
+time, // ===  timeline information === //
+// ===  inline elements not part of Text! === //
+// ===  form elements === //
+label, select, textarea, progress, 
+// ===  data information === //
+data, // ===  <data value='information'> ::before { content: attr(value) } === //
+// ===  inline multimedia === //
+object {
+	font-style: normal; // ===  no italic, hard to read! === //
+	display: inline-block;
+	position: relative;
+}
+// ===  interaction === //
+a, button {
+	font-style: normal; // ===  no italic, hard to read! === //
+	position: relative;
+}
+button {
+	display: inline-block;
+}
+// ===  inline elements without closing tag 
+// ===  br, hr, img, source, input, track {
+// ===  Combination Tags (in order they are nested) === //
+// ===  FORMs have: form, fieldset, legend, label, input, textarea, select, optgroup, option, button; Special Cases: range, meter, output, === //
+// ===  LISTs can be opended with: menu, ol, ul – each type has 1–N li elements that can contain ol and ul lists as well === //
+// ===  TABLEs have: table, caption, colgroup, thead, tbody, tfoot, tr, th scope="col/row", td, === //
+// ===  FIGURES have: figure, figcaption, and sometimes they contain blockquotes or pictures… === //
+// ===  PICTURES have: picture, source (0–N), img (1) === //
+// ===  VIDEO and AUDIO may use: video, track (audio does not support track but should have one!) === //
+// ===  ACCORDEONS are created using: details, summary === //
+// ===  PRONUNCIATIONS are created using: ruby and rt – rp is only to "" === // 
+// ===  unsupported by inclusin: deprecated === //
+// ===  acronym, => abbr === //
+// ===  big, center, font, nobr => CSS === //
+// ===  dir, => ul with list of files === //
+// ===  frame, frameset, noframes, => iframe === //
+// ===  image, => img === //
+// ===  marquee, => do not use moving or flashing text! === //
+// ===  menuitem, (used to be part of menu) => li === //
+// ===  noembed, (no replacement) === //
+// ===  param, (used to be part of object) => data attribute === //
+// ===  plaintext, => pre === //
+// ===  rb, rtc, => ruby, rp, rt === //
+// ===  strike, => del (deleted) OR s (visual strike through) === //
+// ===  tt, => code, kbd, samp, var, pre === //
+// ===  xmp (did display html without interpreting it) === //
+// ===  unsupported by inclusin: not accessible or no extra accessibility added === //
+// ===  b, big, canvas, i, small, hgroup, === //
+// ===  datalist => would provide predefined data to inputs === //
+// ===  wbr => $in-shy; === //
+// ===  portal (experiemental) => iframe === //
+// === override browser rem settings === //
+ul, ol {
+	&:not([class]) {
+		margin-block-start: 16px;
+		margin-block-end: 16px;
+	}
+}

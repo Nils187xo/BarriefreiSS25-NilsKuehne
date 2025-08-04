@@ -1,0 +1,70 @@
+@use 'variables' as *;
+
+.navbar {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+
+  background-color: var(--color-bg-header-footer);
+  padding: 1rem;
+
+  &__list {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 4px;
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-link-hover);
+      color: #fff;
+      outline: 2px solid var(--color-link);
+      outline-offset: 2px;
+    }
+  }
+
+  &__skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+
+    &:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      margin-bottom: 1rem;
+      background-color: var(--color-button-secondary-bg);
+      color: var(--color-button-secondary-text);
+      padding: 0.5rem;
+      border-radius: 4px;
+    }
+  }
+}

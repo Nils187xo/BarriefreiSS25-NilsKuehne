@@ -1,0 +1,18 @@
+@use 'variables';
+
+body {
+  background-color: variables.$color-bg-body;
+  color: variables.$color-text-primary;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+}
+
+a {
+  color: variables.$color-link;
+  text-decoration: underline;
+
+  &:hover {
+    color: variables.$color-link-hover;
+  }
+}
