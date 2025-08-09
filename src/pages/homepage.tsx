@@ -1,7 +1,7 @@
 
 import '../styles/homepage.scss'; 
 
-
+import { Link } from "react-router-dom";
 
 export default function HomePage() {
   return (
@@ -25,9 +25,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <a href="/BarriefreiSS25-NilsKuehne/about" className="homepage__button">
-        Mehr über uns
-      </a>
+      <Link to="/about" className="homepage__button">
+  Mehr über uns
+</Link>
     </main>
   );
 }
