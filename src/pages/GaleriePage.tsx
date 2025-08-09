@@ -3,14 +3,14 @@ import '../styles/GaleriePage.scss';
 
 const images = [
   {
-    src: 'src/images/waldgeschichten-warum-verfaerben-sich-die-blaetter-im-herbst-c-adobe-stock-469296167.jpg',
+    src: 'src/images/bild3.jpg',
     alt: 'Ein Waldweg im Herbst mit buntem Laub auf dem Boden',
     title: 'Wald im Herbst',
     beschreibung: 'Dieses Bild zeigt einen barrierefreien Wanderweg durch einen herbstlichen Mischwald. Es betont die Bedeutung naturbezogener Erholung für alle Menschen.',
     kategorien: ['Natur', 'Outdoor', 'Barrierefreier Tourismus']
   },
   {
-    src: 'src/images/news-2023-barrierefrei-erleben-thiel-pr-erfurt-barrierefreies-reisen-altstad-etmg-barbara-neumann-cc-by-nc-ny-full.jpg',
+    src: 'src/images/bild2.jpg',
     alt: 'Eine Stadtansicht mit abgesenktem Bordstein und Leitsystem für Blinde',
     title: 'Barrierefreie Stadt',
     beschreibung: 'Im Zentrum steht ein öffentlicher Raum, der barrierefrei gestaltet wurde: mit Rampe, Leitsystem und deutlicher Beschilderung.',
