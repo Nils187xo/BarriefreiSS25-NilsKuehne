@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="de-DE">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barrierefreie Welt </title>
+    <style title='prevent_fow'>
+        body {
+            background: #111;
+            color: #fff;
+        }
+
+        a {
+            color: yellow;
+        }
+
+        @media all and (prefers-color-scheme:light) {
+            body {
+                background: #eee;
+                color: #000;
+            }
+
+            a {
+                color: blue;
+            }
+        }
+
+        svg {
+            width: 200px;
+            height: auto;
+        }
+
+        @media screen and (prefers-contrast:less) and (forced-colors: none) {
+            html {
+                filter: contrast(0.75) saturate(0.9) brightness(0.8);
+            }
+        }
+
+        @media screen and (prefers-contrast:more) and (forced-colors: none) {
+            html {
+                filter: contrast(1.5) saturate(1.5) brightness(1.25) brightness(1);
+            }
+
+            picture:has(source[media*='(prefers-contrast: more)']) {
+                filter: contrast(.75) saturate(.75) brightness(.875) !important;
+            }
+        }
+    </style>
+    <meta name="color-scheme" content="light dark">
+    <link rel = "stylesheet" href="styles.css" media="all">
+    <!-- SEO-->
+    <meta name='robots' content='index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1, false, true, unavailable_after: true'>
+    <meta name="description" content="Beschreibung der Seite, die in den Suchergebnissen angezeigt wird">
+    <link rel= "canonical" href="https://www.XXX.de/originalsseite">
+
+    <meta name='format-detection' content='telephone=no, date=no, address=no, email=no, url=no'>
+
+    <link rel='icon' id='favicon-svg'  type='image/svg+xml'  href='favicon.svg'>
+	<link rel='mask-icon' id='mask-icon-svg'  href='mask-icon.svg'>
+	<link rel='apple-touch-icon' id='apple-touch-icon-png'  href='apple-touch-icon.png'>
+
+    <!-- socaol media-->
+    <meta property='og:title' content='Titl'>
+    <meta property='og:description' content='Besxhreibung fuer social mdie kann von SEO abweichen'>
+    <meta property='og:url' content='https://domain.de'>
+    <meta property='og:image' content='https://domain/Bild.png'>
+    <meta property='og:image:alt' content='Bildbeschreinung kommt hier rein!'>
+    <meta property='og:image:type' content='image/png'>
+    <meta property='og:image:width' content='1200'>
+    <meta property='og:image:height' content='627'>
+    <meta property='og:site_name' content='seiten-name'>
+    <meta property='og:type' content='website'>
+
+    <meta name='twitter:card' content='summary_large_image'>
+	<meta name='twitter:description' content='sirhe og:title, wird nicht automatisch uebernommen'>
+	<meta name='twitter:title' content='Jeden Tag eine Barriere weniger im Web! – Barrieren-fasten.de'>
+	<meta name='twitter:image' content='https://domain/Bild.png'>
+	<meta name='twitter:image:alt' content='siehe og:imagae:alt wird nicht automatisch uebernommen'>
+
+
+  <script type="module" crossorigin src="/assets/index-LdKmNfUy.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Dh3lS6hc.css">
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
