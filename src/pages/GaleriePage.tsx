@@ -1,29 +1,36 @@
 import React from 'react';
 import '../styles/GaleriePage.scss';
+import bild3 from './images/bild3.jpg';
+import bild2 from './images/bild2.jpg';
+import bildFehler from './images/AWW6S7DOSJDIDJN73SD5AJUF5U.jpg';
 
 const images = [
   {
-    src: 'src/images/bild3.jpg',
+    src: bild3,
     alt: 'Ein Waldweg im Herbst mit buntem Laub auf dem Boden',
     title: 'Wald im Herbst',
-    beschreibung: 'Dieses Bild zeigt einen barrierefreien Wanderweg durch einen herbstlichen Mischwald. Es betont die Bedeutung naturbezogener Erholung für alle Menschen.',
+    beschreibung:
+      'Dieses Bild zeigt einen barrierefreien Wanderweg durch einen herbstlichen Mischwald. Es betont die Bedeutung naturbezogener Erholung für alle Menschen.',
     kategorien: ['Natur', 'Outdoor', 'Barrierefreier Tourismus']
   },
   {
-    src: 'src/images/bild2.jpg',
+    src: bild2,
     alt: 'Eine Stadtansicht mit abgesenktem Bordstein und Leitsystem für Blinde',
     title: 'Barrierefreie Stadt',
-    beschreibung: 'Im Zentrum steht ein öffentlicher Raum, der barrierefrei gestaltet wurde: mit Rampe, Leitsystem und deutlicher Beschilderung.',
+    beschreibung:
+      'Im Zentrum steht ein öffentlicher Raum, der barrierefrei gestaltet wurde: mit Rampe, Leitsystem und deutlicher Beschilderung.',
     kategorien: ['Stadt', 'Infrastruktur', 'Mobilität']
   },
   {
-    src: 'src/images/AWW6S7DOSJDIDJN73SD5AJUF5U.jpg',
+    src: bildFehler,
     alt: '',
     title: 'Fehlendes Alt-Attribut',
-    beschreibung: 'Dieses Bild hat absichtlich keinen Alt-Text. Es demonstriert, wie Inhalte für Screenreader-Nutzer:innen unzugänglich werden, wenn Informationen fehlen.',
+    beschreibung:
+      'Dieses Bild hat absichtlich keinen Alt-Text. Es demonstriert, wie Inhalte für Screenreader-Nutzer:innen unzugänglich werden, wenn Informationen fehlen.',
     kategorien: ['Fehler', 'Test', 'Sensibilisierung']
-  },
+  }
 ];
+
 
 const GaleriePage: React.FC = () => {
   return (
