@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/GaleriePage.scss';
-import bild3 from './images/bild3.jpg';
-import bild2 from './images/bild2.jpg';
-import bildFehler from './images/AWW6S7DOSJDIDJN73SD5AJUF5U.jpg';
+import bild3 from '../images/bild3.jpg';
+import bild2 from '../images/bild2.jpg';
+import bildFehler from '../images/AWW6S7DOSJDIDJN73SD5AJUF5U.jpg';
 
 const images = [
   {

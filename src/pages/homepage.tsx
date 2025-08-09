@@ -2,6 +2,7 @@
 import '../styles/homepage.scss'; 
 
 
+
 export default function HomePage() {
   return (
     <main className="homepage">
@@ -24,7 +25,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <a href="/about" className="homepage__button">
+      <a href="/BarriefreiSS25-NilsKuehne/about" className="homepage__button">
         Mehr über uns
       </a>
     </main>
